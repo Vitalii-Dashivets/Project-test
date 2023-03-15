@@ -23,7 +23,6 @@
 
 :root {
   --accent-color: rgba(253, 146, 34, 1);
-
   --background-color: rgba(250, 250, 250, 1);
   --background-dark-color: rgba(30, 24, 35, 1);
   --text-white-color: rgba(255, 255, 255, 1);
@@ -31,6 +30,17 @@
   --footer-background-color: rgba(30, 24, 35, 1);
   --border-color: rgba(17, 17, 17, 0.05);
   --placeholder-color: rgba(64, 64, 64, 0.3);
+
+  --swiper-pagination-bullet-horizontal-gap: 6.5px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 .container {
   max-width: 375px;
