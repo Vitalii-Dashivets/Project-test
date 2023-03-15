@@ -6,20 +6,6 @@
 */
 @import url('./reset.css');
 @import url('./style-font.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./advantages.css');
-@import url('./about.css');
-@import url('./products.css');
-@import url('./sellers.css');
-@import url('./subscribe.css');
-@import url('./footer.css');
-
-@import url('./modal-buy.css');
-@import url('./modal-thank.css');
-@import url('./modal-review.css');
-@import url('./modal-feedback.css');
-@import url('./modal-explore.css');
 
 :root {
   --accent-color: rgba(253, 146, 34, 1);
@@ -49,3 +35,17 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./about.css');
+@import url('./products.css');
+@import url('./sellers.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+
+@import url('./modal-buy.css');
+@import url('./modal-thank.css');
+@import url('./modal-review.css');
+@import url('./modal-feedback.css');
+@import url('./modal-explore.css');
