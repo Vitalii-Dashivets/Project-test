@@ -5,8 +5,9 @@
   --text-white-color: rgba(255, 255, 255, 1);
   --text-dark-color: rgba(17, 17, 17, 1);
   --footer-background-color: rgba(30, 24, 35, 1);
-  --border-color: rgba(17, 17, 17, 0.5);
+  --border-color: rgba(17, 17, 17, 0.05);
   --placeholder-color: rgba(64, 64, 64, 0.3);
+  --bullet-color: rgba(17, 17, 17, 0.1);
   --swiper-pagination-bullet-horizontal-gap: 6.5px;
 }
 

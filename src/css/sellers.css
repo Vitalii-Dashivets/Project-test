@@ -18,7 +18,7 @@
   font-size: 12px;
   color: #000;
   opacity: 1;
-  background: var(--text-dark-color);
+  background: var(--bullet-color);
 }
 .swiper-pagination-bullet {
   margin: 0px var(--swiper-pagination-bullet-horizontal-gap);
