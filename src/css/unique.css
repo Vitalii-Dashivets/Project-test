@@ -1,7 +1,7 @@
 .unique {
-    
+padding-top: 72px;
+padding-bottom: 72px;
 }
-
 
 .unique-tittle {
     font-family: 'Montserrat';
@@ -11,6 +11,7 @@ line-height: calc(20/24);
 text-align: center;
 text-transform: uppercase;
 color: var(--text-dark-color);
+margin-bottom: 24px;
 }
 
 .unique-tittle-accent {
@@ -21,7 +22,7 @@ color: var(--text-dark-color);
 font-size: 14px;
 line-height: calc(18/24);
 text-align: center;
-width: 335px;
+font-family: 'Montserrat';
 }
 
 .unique-items {
