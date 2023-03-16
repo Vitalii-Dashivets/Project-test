@@ -1,11 +1,41 @@
+/* Body ??? */
+.about-section>.container {
+    outline: 1px dotted red;
+}
+
+.about-section .about-title {
+    text-align: center;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ABOUT - SECTION HOW IT’S MADE? */
+
 .about-section {
     margin-bottom: 72px;
 }
 
-.about-title {}
+.about-title {
+    margin-bottom: 32px;
+}
 
-.list {}
+.about-list {
+    padding: 20px 14px;
 
-.about-list {}
+}
 
-.about-item {}
+.about-item {
+    /* margin-bottom: 18px; */
+}
+
+.about-item:first-child {
+    margin-top: 20px;
+}
+
+.about-item:not(:last-child) {
+    margin-bottom: 18px;
+}
