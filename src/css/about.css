@@ -1,10 +1,20 @@
 /* Body ??? */
-.about-section>.container {
-    outline: 1px dotted red;
+@media screen and (max-width: 767px) {
+    .about-section>.container {
+        font-family: 'Montserrat', sans-serif;
+        outline: 1px dotted red;
+    }
 }
 
 .about-section .about-title {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--text-dark-color, #111111);
 }
 
 .list {
@@ -23,13 +33,42 @@
     margin-bottom: 32px;
 }
 
+.about-title>span {
+    color: var(--accent-color, #FD9222)
+}
+
+.about-video-box {
+    position: relative;
+    width: 100%;
+    max-width: 335px;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* object-fit: contain */
+}
+
+.about-video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .about-list {
     padding: 20px 14px;
-
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    color: var(--text-dark-color, #111111);
 }
 
 .about-item {
-    /* margin-bottom: 18px; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
 }
 
 .about-item:first-child {
