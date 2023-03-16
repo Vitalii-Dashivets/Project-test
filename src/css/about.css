@@ -2,7 +2,8 @@
 @media screen and (max-width: 767px) {
     .about-section>.container {
         font-family: 'Montserrat', sans-serif;
-        outline: 1px dotted red;
+        /* background-color: var(--background-color); */
+        /* outline: 2px dotted red; */
     }
 }
 
@@ -26,6 +27,8 @@
 /* ABOUT - SECTION HOW IT’S MADE? */
 
 .about-section {
+    --about-bg-color-item: rgba(76, 76, 76, 1);
+    --background-light-color: rgba(255, 255, 255, 1);
     margin-bottom: 72px;
 }
 
@@ -39,21 +42,23 @@
 
 .about-video-box {
     position: relative;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 335px;
-    height: 500px;
-    max-height: 500px;
+    padding-bottom: 149.26%;
+    height: 0px;
+    /* max-height: 500px; */
     border-radius: 15px;
     overflow: hidden;
-    /* object-fit: contain */
 }
 
 .about-video-box iframe {
+    /* object-fit: contain; */
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
 .about-list {
@@ -62,13 +67,29 @@
     font-size: 18px;
     line-height: calc(24 / 18);
     color: var(--text-dark-color, #111111);
+    background-color: var(--background-light-color);
+    border-radius: 15px;
 }
 
 .about-item {
+    position: relative;
+    padding-left: 16px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(18 / 14);
     letter-spacing: -0.02em;
+}
+
+.about-item::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--about-bg-color-item, #4C4C4C);
+    border: 1px solid #ECEDED;
 }
 
 .about-item:first-child {
