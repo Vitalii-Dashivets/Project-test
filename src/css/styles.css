@@ -33,8 +33,22 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-@import url('./reset.css');
-@import url('./fonts/style-font.css');
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@import url('reset.css');
+@import url('fonts/style-font.css');
 
 @import url('./header.css');
 @import url('./hero.css');
@@ -47,6 +61,6 @@ html {
 
 @import url('./modal-buy.css');
 @import url('./modal-thank.css');
-@import url('./modal-review.css');
+@import url('./modal-reviews.css');
 @import url('./modal-feedback.css');
 @import url('./modal-explore.css');
