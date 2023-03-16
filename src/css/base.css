@@ -8,6 +8,7 @@
   --border-color: rgba(17, 17, 17, 0.05);
   --placeholder-color: rgba(64, 64, 64, 0.3);
   --bullet-color: rgba(17, 17, 17, 0.1);
+  --btn-hover-color: rgba(252, 241, 224, 1);
   --swiper-pagination-bullet-horizontal-gap: 6.5px;
 }
 
