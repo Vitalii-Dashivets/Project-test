@@ -1,3 +1,35 @@
 .unique {
-width: 100%;
+    
+}
+
+
+.unique-tittle {
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 20px;
+line-height: calc(20/24);
+text-align: center;
+text-transform: uppercase;
+color: var(--text-dark-color);
+}
+
+.unique-tittle-accent {
+    color: var(--accent-color);
+}
+
+.unique-text {
+font-size: 14px;
+line-height: calc(18/24);
+text-align: center;
+width: 335px;
+}
+
+.unique-items {
+    text-decoration: none;
+}
+
+.unique-item {
+}
+
+.unique-item-description {
 }
