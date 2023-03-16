@@ -35,7 +35,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;
+    max-width: 1200px;
     padding-left: 32px;
     padding-right: 32px;
   }
