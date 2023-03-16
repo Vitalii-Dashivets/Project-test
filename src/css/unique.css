@@ -1,20 +1,20 @@
 .unique {
 padding-top: 72px;
 padding-bottom: 72px;
+font-family: 'Montserrat';
 }
 
 .unique-tittle {
     margin: auto;
-    font-family: 'Montserrat';
 font-weight: 600;
 font-size: 20px;
-line-height: calc(20/24);
+line-height: calc(24 / 20);
 text-align: center;
 text-transform: uppercase;
 color: var(--text-dark-color);
 margin-bottom: 24px;
 letter-spacing: -0.03em;
-width: 283px;
+max-width: 283px;
 }
 
 .unique-tittle-accent {
@@ -23,20 +23,36 @@ width: 283px;
 
 .unique-text {
 font-size: 14px;
-line-height: calc(18/24);
+line-height: calc(18 / 14);
 text-align: center;
-font-family: 'Montserrat';
 letter-spacing: -0.02em;
+margin-bottom: 24px;
 }
 
 .unique-items {
-    text-decoration: none;
+    display: grid;
+    gap: 20px;
 }
 
 .unique-item {
     background: #FD9222;
 border-radius: 15px;
+padding: 28px 55px 71px 56px;
+position: relative;
 }
 
 .unique-item-description {
+    position: absolute;
+    bottom: 28px;
+left: 28px;
+
+font-weight: 600;
+font-size: 14px;
+line-height: calc(18 / 14);
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+
+.unique-item:nth-child(odd) {
+color: var(--text-white-color);
 }
