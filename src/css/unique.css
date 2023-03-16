@@ -4,6 +4,7 @@ padding-bottom: 72px;
 }
 
 .unique-tittle {
+    margin: auto;
     font-family: 'Montserrat';
 font-weight: 600;
 font-size: 20px;
@@ -12,6 +13,8 @@ text-align: center;
 text-transform: uppercase;
 color: var(--text-dark-color);
 margin-bottom: 24px;
+letter-spacing: -0.03em;
+width: 283px;
 }
 
 .unique-tittle-accent {
@@ -23,6 +26,7 @@ font-size: 14px;
 line-height: calc(18/24);
 text-align: center;
 font-family: 'Montserrat';
+letter-spacing: -0.02em;
 }
 
 .unique-items {
@@ -30,6 +34,8 @@ font-family: 'Montserrat';
 }
 
 .unique-item {
+    background: #FD9222;
+border-radius: 15px;
 }
 
 .unique-item-description {
