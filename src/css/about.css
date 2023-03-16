@@ -29,7 +29,7 @@
 .about-section {
     --about-bg-color-item: rgba(76, 76, 76, 1);
     --background-light-color: rgba(255, 255, 255, 1);
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .about-title {
