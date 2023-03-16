@@ -1,0 +1,274 @@
+/* --------------MODAL-BUY--------------- */
+/* --------------MODAL-BUY--------------- */
+/* --------------MODAL-BUY--------------- */
+/* --------------MODAL-BUY--------------- */
+.overlay {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 500ms linear;
+  overflow-y: auto;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+
+  visibility: visible;
+  /* pointer-events: none; */
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  width: calc(100% - 32px);
+  max-width: 311px;
+  min-height: 1007px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  padding: 32px 24px;
+  translate: -50% 0%;
+  border-radius: 15px;
+  background-color: var(--background-color);
+  transition: transform 500ms linear;
+}
+/* .modal_buy {
+  z-index: 3;
+  width: calc(100% - 32px);
+  max-width: 311px;
+  min-height: 1007px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  padding: 32px 24px;
+  translate: -50% 0%;
+  border-radius: 15px;
+  background-color: var(--background-color);
+} */
+/* .backdrop.is-hidden .modal_buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.4);
+} */
+.modal-close-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-dark-color);
+  background-color: inherit;
+}
+.modal-close-button {
+  background-color: inherit;
+  border: none;
+  margin-left: auto;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.modal-buy-list {
+  margin-bottom: 37px;
+}
+.modal-buy-item {
+  max-height: 364px;
+  padding: 0;
+  background-color: inherit;
+}
+.modal-buy-card {
+  width: 231px;
+  max-height: 257px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.modal-buy-card img {
+  display: block;
+  width: 167px;
+  height: 148px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+.modal-buy-title {
+  margin-bottom: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--accent-color);
+  text-align: center;
+}
+.modal-buy-title span {
+  color: var(--text-dark-color);
+}
+.modal-weight {
+  display: inline-block;
+  min-width: 96px;
+
+  padding: 8px 0px;
+  color: var(--text-dark-color);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  border-radius: 17px;
+  cursor: pointer;
+}
+.modal-buy-input {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-color);
+  padding-left: 18px;
+  background-color: var(--text-white-color);
+  text-align: left;
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-buy-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  color: var(--placeholder-color);
+  vertical-align: middle;
+}
+.modal-buy-input:not(:placeholder-shown):invalid {
+  border-color: red;
+  background-color: rgba(239, 116, 122, 0.4);
+}
+.modal-buy-label:first-child + .modal-buy-input {
+  margin-bottom: 14px;
+}
+.modal-buy-label {
+  position: relative;
+  padding: 0;
+}
+.modal-buy-label span {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--text-dark-color);
+  text-align: left;
+  margin-bottom: 8px;
+}
+.modal-buy-flag {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.modal-buy-box {
+  display: inline-block;
+  position: relative;
+}
+.modal-buy-box > .modal-buy-input {
+  padding-left: 106px;
+}
+.modal-buy-code {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  color: var(--text-dark-color);
+}
+.modal-buy-box b {
+  display: inline-block;
+  height: 24px;
+  width: 74px;
+  padding: 0px;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  border-right: 1px solid var(--border-color);
+}
+.modal-buy-box-bank {
+  display: block;
+  position: relative;
+  padding-left: 0;
+}
+.modal-buy-bank-icon {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+.modal-buy-textarea {
+  width: 100%;
+  height: 91px;
+  margin-bottom: 18px;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-color);
+}
+.modal-buy-textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  color: var(--placeholder-color);
+}
+.modal-buy-submit {
+  display: block;
+  min-width: 109px;
+  padding: 12px 28px;
+
+  margin-right: auto;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  color: var(--background-color);
+  text-align: center;
+}
