@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Project-test/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/Project-test/assets/index-fac82e35.js"></script>
+    <link rel="stylesheet" href="/Project-test/assets/index-a4e5f131.css">
+  </head>
+  <body>
+    
+
+    <!-- Loads the specified .html file -->
+    <main>
+      
+      
+      
+      
+      
+      <section class="container sellers-container">
+  <h2 id="sellers" class="sellers-title">TOP<span> SELLERS</span></h2>
+  <img
+    class="sellers-image"
+    srcset="../img/choco-nut-mob@1x.jpg 1x, ../img/choco-nut-mob@2x.jpg 2x"
+    src="../img/choco-nut-mob@1x.jpg"
+    alt="Шоколад і нут на столі"
+    width="335"
+    height="464"
+  />
+  <p class="sellers-text">
+    Crazy enough chocolate originates from a bean just like the coffee bean
+    called Cacao. Cacao has been around for thousands of years and was first
+    discovered by the Native American tribe called the Mayans.
+  </p>
+  <img
+    class="sellers-image"
+    srcset="../img/choco-slice-mob@1x.jpg 1x, ../img/choco-slice-mob@2x.jpg 2x"
+    src="../img/choco-slice-mob@1x.jpg"
+    alt="Шоколад і нут на столі"
+    width="335"
+    height="464"
+  />
+  <button class="sellers-button js-open-modal" type="button" data-modal="1">
+    Buy now
+  </button>
+</section>
+
+
+      
+      
+    </main>
+    
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal_buy modal" data-modal="1">
+  <button class="modal-close-button js-modal-close" type="button">
+    <svg class="modal-close-icon" width="12" height="12">
+      <use href="../img/icons.svg#x"></use>
+    </svg>
+  </button>
+  <p class="modal-buy-title">BUY<span> NOW</span></p>
+  <div class="swiper">
+    <ul class="swiper-wrapper modal-buy-list">
+      <li class="swiper-slide modal-buy-item">
+        <div class="modal-buy-card">
+          <img
+            srcset="../img/modal-mob-1@1x.png 1x, ../img/modal-mob-1@2x.png 2x"
+            src="../img/modal-mob-1@1x.png"
+            alt="Скибки шоколаду"
+          />
+
+          <span class="modal-weight">100 g</span>
+        </div>
+      </li>
+      <li class="swiper-slide modal-buy-item">
+        <div class="modal-buy-card">
+          <img
+            srcset="../img/modal-mob-2@1x.png 1x, ../img/modal-mob-2@2x.png 2x"
+            src="../img/modal-mob-2@1x.png"
+            alt="Скибки чорного і білого шоколаду з горіхами"
+          />
+
+          <span class="modal-weight">200 g</span>
+        </div>
+      </li>
+      <li class="swiper-slide modal-buy-item">
+        <div class="modal-buy-card">
+          <img
+            srcset="../img/modal-mob-3@1x.png 1x, ../img/modal-mob-3@2x.png 2x"
+            src="../img/modal-mob-3@1x.png"
+            alt="Дві плитки чорного шоколаду"
+          />
+
+          <span class="modal-weight">300 g</span>
+        </div>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+  </div>
+  <form name="signup_form" autocomplete="on">
+    <label for="Name" class="modal-buy-label">
+      <span>Personal information</span>
+    </label>
+
+    <input
+      lang="ukr"
+      id="Name"
+      class="modal-buy-input"
+      type="text"
+      placeholder="Name"
+      pattern="[a-z]{3,16}"
+      title="Surname 3-20 characters"
+      minlength="3"
+      maxlength="20"
+      required
+    />
+
+    <label for="Surname" class="modal-buy-label"></label>
+    <input
+      id="Surname"
+      class="modal-buy-input"
+      type="text"
+      placeholder="Surname"
+      pattern="[a-z]{3,16}"
+      title="Surname 3-20 characters"
+      minlength="3"
+      maxlength="20"
+      required
+    />
+
+    <label for="mail" class="modal-buy-label"><span>Email</span></label>
+    <input
+      id="mail"
+      class="modal-buy-input"
+      type="email"
+      required
+      minlength="6"
+      maxlength="50"
+      placeholder="Enter your email"
+      pattern="[^@\s]+@[^@\s]+"
+      title="Invalid email address"
+    />
+    <label class="modal-buy-label" for="phone">
+      <span> Phone number</span></label
+    >
+    <span class="modal-buy-box">
+      <input
+        class="modal-buy-input"
+        id="phone"
+        type="tel"
+        pattern="[0-9]{9}"
+        placeholder="Phone number"
+        title="Nine digits code"
+        required
+        maxlength="9"
+      />
+      <b>
+        <svg class="modal-buy-flag" width="24" height="24">
+          <use href="../img/icons.svg#flag"></use>
+        </svg>
+        <span class="modal-buy-code">+380</span>
+      </b>
+    </span>
+    <label class="modal-buy-label" for="bank">
+      <span>Card number</span>
+    </label>
+    <span class="modal-buy-box-bank">
+      <input
+        id="bank"
+        class="modal-buy-input"
+        type="text"
+        pattern="[0-9]{16}"
+        title="Sixteen digits code"
+        placeholder="Enter card"
+        maxlength="16"
+        required
+      />
+      <svg class="modal-buy-bank-icon" width="32" height="21">
+        <use href="../img/icons.svg#mastercard"></use>
+      </svg>
+    </span>
+    <label for="comment" class="modal-buy-label">
+      <span>Comment</span>
+      <textarea
+        id="comment"
+        class="modal-buy-textarea"
+        name="comment"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+
+    <button class="modal-buy-submit js-open-modal" type="submit" data-modal="2">
+      Submit
+    </button>
+  </form>
+</div>
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
