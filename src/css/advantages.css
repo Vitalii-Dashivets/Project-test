@@ -7,7 +7,7 @@
 
 }
 .advantages-list {
-    width: 336px;
+    max-width: 336px;
 }
 .advantages-list-item {
     width: 336px;
@@ -42,12 +42,25 @@
     color: rgba(255, 255, 255, 0.7);
 }
 @media screen and (min-width: 768px) {
+    .section-advantages.container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+    }
     .advantages-list {
         display: flex;
         flex-wrap: wrap;
+        max-width: auto;
+        row-gap: 41px;
+        column-gap: 60px;
+        
         
     }
+    .advantages-list-item:not(:last-child){
+        margin-bottom: 0;
+    }
     .advantages-list-item {
-        
+        flex-basis: calc((100% - 60px) / 2); 
+
     }
 }
