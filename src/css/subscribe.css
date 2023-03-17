@@ -1,0 +1,73 @@
+.subscribe-section {
+  font-family: 'Montserrat';
+  padding-top: 62px;
+  padding-bottom: 63px;
+  text-align: center;
+
+  background-color: var(--background-dark-color);
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/Subcribe-mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/Subcribe-mob@2x.jpg);
+  }
+}
+
+.subscribe-title {
+  margin: 0 18px 24px 18px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+}
+
+.subscribe-text {
+  margin: 0 5px 24px 5px;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  color: var(--text-white-color);
+}
+
+.subscribe-button {
+  padding: 12px 28px;
+  min-width: 128px;
+  min-height: 41px;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--text-white-color);
+
+  transition: color var(--transition-speed),
+    background-color var(--transition-speed);
+}
+
+.subscribe-button:focus,
+.subscribe-button:hover {
+  color: var(--accent-color);
+  background-color: var(--btn-hover-color);
+}

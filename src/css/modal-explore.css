@@ -1,0 +1,65 @@
+.modal-explore-section {
+  font-family: 'Montserrat';
+  max-width: 311px;
+  min-height: 350px;
+}
+
+.modal-explore-img {
+}
+
+.modal-explore-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-dark-color);
+}
+
+.modal-explore-container {
+  padding: 32px 24px;
+  border-radius: 15px;
+}
+
+.modal-explore-title-accent {
+  color: var(--accent-color);
+}
+
+.modal-explore-input-group {
+  position: relative;
+}
+
+.modal-explore-input {
+  padding: 14px 18px;
+  min-width: 263px;
+  height: 45px;
+
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+  color: var(--placeholder-color);
+
+  border-radius: 100px;
+  border: 1.5px solid var(--border-color);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+}
+
+.modal-explore-input-btn {
+  position: absolute;
+  top: 0px;
+  left: 163px;
+
+  padding: 14px 22px;
+  min-width: 100px;
+  height: 45px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+}
