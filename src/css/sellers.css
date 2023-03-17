@@ -3,6 +3,12 @@
   border-radius: 15px;
   margin-bottom: 0;
 }
+.swiper {
+  margin-bottom: 28px;
+}
+.swiper-pagination {
+  padding: 0;
+}
 .swiper-slide {
   background: #fff;
   border-radius: 15px;
@@ -30,7 +36,7 @@
   background: var(--accent-color);
 }
 .sellers-container {
-  padding-top: 70px;
+  padding-top: 72px;
   padding-bottom: 0;
   background-color: #fafafa;
 }
